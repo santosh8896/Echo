@@ -25,7 +25,7 @@ class AboutUsFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true)
-
+        activity?.title = "About Us"
         val view = inflater!!.inflate(R.layout.fragment_about_us, container, false)
         developerPhoto = view?.findViewById(R.id.developer_photo)
         return view
